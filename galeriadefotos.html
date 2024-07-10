@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Fotos - Departamento de San Martín</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+            padding-top: 20px;
+        }
+        .title {
+            text-align: center;
+            padding: 20px 0;
+            color: #2e8b57;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-items: center;
+            align-items: center;
+        }
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border: 3px solid #2e8b57;
+            border-radius: 10px;
+            transition: transform 0.2s, border-color 0.2s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            border-color: #3cb371;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2e8b57;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .subpages {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .subpages a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #2e8b57;
+            font-weight: bold;
+        }
+        .subpages a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Galería de Fotos - Departamento de San Martín</h1>
+        <div class="subpages">
+    <a href="indexSanMartínn.html">Inicio</a>
+    <a href="asp_geoo.html">Geografía</a>
+    <a href="asp_his.html">Historia</a>
+    <a href="asp_eco.html">Economía</a>
+</div>
+
+        <!-- Galería de fotos -->
+        <div class="gallery">
+            <img src="img/imgone.jpg">
+            <img src="img/imgtwo.jpg" alt="Imagen 2">
+            <img src="img/imgthree.jpg" alt="Imagen 3">
+            <img src="img/imgfour.jpg" alt="Imagen 4">
+            <img src="img/imgfive.jpg" alt="Imagen 5">
+            <img src="img/imgsix.jpg" alt="Imagen 6">
+            <img src="img/imgseven.jpg" alt="Imagen 7">
+            <img src="img/imgeigth.jpg" alt="Imagen 8">
+            <img src="img/imgnine.jpg" alt="Imagen 9">
+        </div>
+    </div>
+    
+    <div class="footer">
+        &copy; 2024 Galería de Fotos - Departamento de San Martín
+    </div>
+</body>
+</html>
